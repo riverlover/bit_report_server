@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+      http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+      http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+      http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+      http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-3.1.xsd">
+      
+      
+    <!-- 扫描所有的@后的注解，生成对应的bean -->
+	<context:component-scan base-package="zhenhe.li.report.birt,zhenhe.li.common,zhenhe.li.util" />
+
+	<!-- 国际化信息 -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+			<array>
+				<!-- <value>classpath:message_zh_CN</value> -->
+			</array>
+		</property>
+		<property name="cacheSeconds" value="5"/>
+	</bean>
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver" />
+	<!-- 国际化信息结束 -->  
+	
+	<aop:aspectj-autoproxy /><!-- 支持 @AspectJ 标记 -->
+	<!-- JSR-303 Validator支持 -->
+	<bean
+		class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+		<property name="validationMessageSource" ref="messageSource" />
+	</bean>
+	
+	
+    <bean id="propertyConfigurer" class="zhenhe.li.util.spring.ConfigUtil">
+        <property name="locations">
+            <list>
+                <value>/WEB-INF/jdbc.properties</value>
+                <value>classpath:reportTaskServer.properties</value>
+            </list>
+        </property>
+    </bean>
+    
+
+	
+	<!-- persistence start -->
+	
+   	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<description>连接池配置</description>
+		<property name="driverClassName" value="${jdbc.driverClass}" />
+		<property name="url" value="${jdbc.url}"/>
+		<property name="username" value="${jdbc.username}" />
+		<property name="password" value="${jdbc.password}" />
+		<property name="initialSize" value="1" />
+		<property name="maxActive" value="50" />
+		<property name="maxWait"><value>60000</value></property>  
+        <property name="maxIdle"><value>20</value></property>  
+        <property name="minIdle"><value>3</value></property>  
+        <property name="removeAbandoned"><value>true</value></property>  
+        <property name="removeAbandonedTimeout"><value>180</value></property>
+        <!-- 针对mysql,不同数据库，不同的语句，如oracle:select 1 from dual -->
+        <property name="validationQuery" value="SELECT 1" />
+        <!-- 取得、返回对象和空闲时是否进行验证 -->
+    	<property name="testOnBorrow" value="true"/>
+    	<property name="testOnReturn" value="true"/>
+    	<property name="testWhileIdle" value="true"/>
+    	
+       <!--  <property name="connectionProperties"><value>clientEncoding=UTF-8</value></property> -->  
+		<!-- 其它属性 maxIdle maxOpenPreparedStatements maxWait minEvictableIdleTimeMillis 
+			minIdle poolPreparedStatements -->
+	</bean>	
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<!-- <property name="configLocation">
+			<value>classpath:jbpm.hibernate.cfg.xml</value>
+		</property> -->
+		<property name="dataSource" ref="dataSource" />
+		<property name="mappingResources">
+			<list>
+				<!-- <value>jbpm.repository.hbm.xml</value> -->
+			</list>
+		</property>
+		<property name="packagesToScan">
+			<list>				
+				<!-- <value>zh.li.entity</value> -->
+				<value>zhenhe.li.util.sequence.hibernate.entity</value>
+				<value>zhenhe.li.report.birt.task.entity</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.jdbc.fetch_size">25</prop>
+				<prop key="hibernate.jdbc.batch_size">50</prop>
+				<prop key="hibernate.connection.release_mode">after_transaction</prop>
+				<prop key="hibernate.autoReconnect">true</prop>
+		<!--二级缓存测试 -->
+				<prop key="hibernate.cache.use_second_level_cache">true</prop>
+				<prop key="hibernate.cache.use_query_cache">false</prop>
+			</props>
+		</property>
+		
+	</bean>
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref local="sessionFactory" />
+		</property>
+	</bean>	
+	<tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true"/>
+	
+	<bean
+		class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />	
+	<!-- persistence end -->
+	
+	<bean id="reportTaskServer" class="zhenhe.li.report.birt.task.service.ReportTaskServer">
+		<property name="maxThreadsNum" value="${maxThreadsNum}"/>
+		<property name="rollInterval" value="${rollInterval}"/>
+		<property name="destFilePath" value="${destFilePath}"/>
+		<property name="managerIP" value="${managerIP}"/>
+		<property name="managerPort" value="${managerPort}"/>
+		<property name="reportDesignParentPath" value="${reportDesignParentPath}"/>
+		<property name="expiredDays" value="${expiredDays}"/>
+	</bean>
+	
+</beans>

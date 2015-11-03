@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry including="**/*.java" kind="src" output="target/classes" path="src">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="conf"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/com.ibm.icu_54.1.1.v201501272100.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/com.lowagie.text_2.1.7.v201004222200.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/derby.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/flute.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/javax.wsdl_1.5.1.v201012040544.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/javax.xml_1.3.4.v201005080400.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/javax.xml.stream_1.0.1.v201004272200.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/net.sourceforge.lpg.lpgjavaruntime_1.1.0.v201004271650.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.batik.bridge_1.6.0.v201011041432.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.batik.css_1.6.0.v201011041432.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.batik.dom_1.6.1.v201505192100.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.batik.dom.svg_1.6.0.v201011041432.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.batik.ext.awt_1.6.0.v201011041432.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.batik.parser_1.6.0.v201011041432.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.batik.pdf_1.6.0.v201105071520.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.batik.svggen_1.6.0.v201011041432.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.batik.transcoder_1.6.0.v201011041432.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.batik.util_1.6.0.v201011041432.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.batik.util.gui_1.6.0.v201011041432.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.batik.xml_1.6.0.v201011041432.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.commons.codec_1.6.0.v201305230611.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.commons.logging_1.1.1.v201101211721.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.lucene.core_3.5.0.v20120725-1805.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.poi_3.9.0.v201405241750.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.xerces_2.9.0.v201101211617.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.xml.resolver_1.2.0.v201005080400.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.apache.xml.serializer_2.7.1.v201005080400.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.birt.runtime_4.5.0.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.core.contenttype_3.5.0.v20150421-2214.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.core.expressions_3.5.0.v20150421-2214.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.core.filesystem_1.5.0.v20150421-0713.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.core.jobs_3.7.0.v20150330-2103.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.core.resources_3.10.0.v20150423-0755.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.core.runtime_3.11.0.v20150405-1723.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.core.runtime.compatibility_3.2.300.v20150423-0821.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.connectivity_1.2.11.v201401230755.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.connectivity.apache.derby_1.0.103.v201212070447.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.connectivity.apache.derby.dbdefinition_1.0.2.v201107221459.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.connectivity.console.profile_1.0.10.v201109250955.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.connectivity.db.generic_1.0.1.v201107221459.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.connectivity.dbdefinition.genericJDBC_1.0.2.v201310181001.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.connectivity.oda_3.4.3.v201405301249.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.connectivity.oda.consumer_3.2.6.v201403131814.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.connectivity.oda.design_3.3.6.v201403131814.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.connectivity.oda.flatfile_3.1.8.v201403010906.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.connectivity.oda.profile_3.2.9.v201403131814.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.connectivity.sqm.core_1.2.8.v201401230755.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.hsqldb_1.0.0.v201107221502.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.hsqldb.dbdefinition_1.0.0.v201107221502.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.ibm_1.0.0.v201401170830.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.db2_1.0.0.v201401170830.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.db2.iseries_1.0.2.v201107221502.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.db2.iseries.dbdefinition_1.0.3.v201107221502.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.db2.luw_1.0.3.v201401170830.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.db2.luw.dbdefinition_1.0.7.v201405302027.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.db2.zseries_1.0.2.v201107221502.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.db2.zseries.dbdefinition_1.0.4.v201107221502.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.informix_1.0.1.v201107221502.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.ibm.informix.dbdefinition_1.0.4.v201107221502.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.msft.sqlserver_1.0.3.v201308161009.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.msft.sqlserver.dbdefinition_1.0.1.v201201240505.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.mysql_1.0.4.v201212120617.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.mysql.dbdefinition_1.0.4.v201109022331.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.oda.ws_1.2.6.v201403131825.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.oda.xml_1.2.5.v201403131825.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.oracle_1.0.0.v201107221506.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.oracle.dbdefinition_1.0.103.v201206010214.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.postgresql_1.1.1.v201205252207.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.postgresql.dbdefinition_1.0.2.v201110070445.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.sap.maxdb_1.0.0.v201107221507.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.enablement.sap.maxdb.dbdefinition_1.0.0.v201107221507.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.modelbase.dbdefinition_1.0.2.v201107221519.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.modelbase.derby_1.0.0.v201107221519.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.modelbase.sql_1.0.6.v201208230744.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.modelbase.sql.query_1.1.4.v201212120619.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.sqltools.data.core_1.2.3.v201212120623.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.sqltools.parsers.sql_1.0.2.v201107221520.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.sqltools.parsers.sql.lexer_1.0.1.v201107221520.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.sqltools.parsers.sql.query_1.2.1.v201201250511.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.datatools.sqltools.result_1.1.6.v201402080246.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.emf.common_2.11.0.v20150512-0501.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.emf.ecore_2.11.0.v20150512-0501.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.emf.ecore.change_2.11.0.v20150512-0501.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.emf.ecore.xmi_2.11.0.v20150512-0501.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.equinox.app_1.3.300.v20150423-1356.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.equinox.common_3.7.0.v20150402-1709.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.equinox.preferences_3.5.300.v20150408-1437.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.equinox.registry_3.6.0.v20150318-1503.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.help_3.6.0.v20130326-1254.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.orbit.mongodb_2.10.1.v20130422-1135.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.osgi_3.10.100.v20150529-1857.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.osgi.services_3.5.0.v20150519-2006.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.eclipse.update.configurator_3.3.300.v20140518-1928.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.mozilla.javascript_1.7.5.v201504281450.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.w3c.css.sac_1.3.1.v200903091627.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.w3c.dom.events_3.0.0.draft20060413_v201105210656.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.w3c.dom.smil_1.0.1.v200903091627.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/org.w3c.dom.svg_1.1.0.v201011041433.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>
